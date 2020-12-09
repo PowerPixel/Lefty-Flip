@@ -14,7 +14,6 @@ namespace LeftyFlip
         
         public Vector2 Filter(Vector2 point)
         {
-            Log.Write("Filter",Vector2.Transform(point,this.rotationMatrix).ToString(),LogLevel.Debug);
             return Vector2.Transform(point,this.rotationMatrix);
         }
         public FilterStage FilterStage => FilterStage.PreTranspose;
